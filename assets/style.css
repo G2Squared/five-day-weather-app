@@ -90,3 +90,13 @@ form input[type="text"] {
     border-bottom: 2px solid black;
     margin-top: 20px
 }
+
+.addSpacing {
+    margin-top: 10px;
+}
+
+.addHeight {
+    display: table-cell;
+    margin: 5px;
+    padding-bottom: 10px;
+}

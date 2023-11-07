@@ -151,17 +151,17 @@ function findCity(city) {
     function showSearchHistory() {
       var storedCities = JSON.parse(localStorage.getItem("cities"));
     
-      if (storedCities !== null) {
+      if (storedCities !== null) 
         for (var i = 0; i < storedCities.length; i++) {
-          var button = createElement("button", {
-            textContent: storedCities[i],
-            class: "btn btn-info",
-            id: "historyButton" + i,
-          });
-          buttonList.appendChild(button);
-          button.addEventListener("click", handleButton);
+          var button = document.createElement("button");
+            button.textContent = storedCities[i];
+            button.classList.add ("btn");
+            button.classList.add("btn-info");
+            button.id = "historyButton" + i;
+            buttonList.appendChild(button);
+            button.addEventListener("click", handleButton);
         }
-      }
+      
     }
     
     function handleButton() {
